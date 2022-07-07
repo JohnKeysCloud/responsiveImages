@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'getSchwifty';
+  src: url(../fonts/getSchwifty.woff2);
+}
+
+@font-face {
+  font-family: 'gosha';
+  src: url(../fonts/GoshaSansRegular.otf);
+}
+
+:root {
+  --h1-fontsize: clamp(3.5rem, 7vw, 7rem);
+  --h2-fontsize: clamp(2.5rem, 5vw, 5rem);
+  --p-fontsize: clamp(1.5rem, 3vw, 3rem);
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: 'Gosha', Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  padding: 50px 10vw;
+
+  position: relative;
+} 
+
+.art-dir-container,
+.res-change-container {
+  display: grid;
+  justify-items: center;
+}
+
+h1, h2, p {
+  justify-self: start;
+
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--h1-fontsize);
+}
+
+h2 {
+  font-size: var(--h2-fontsize);
+  margin: 0 0 25px 0;
+}
+
+p {
+  font-size: var(--p-fontsize);
+  margin: 0 0 50px 0;
+}
+
+img {
+  width: 55vw;
+}

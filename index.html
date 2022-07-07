@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>srcsetExample</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- <script src="https://kit.fontawesome.com/24176ab973.js" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
+    <main>
+      <section class="aurora">
+        <h2>Aurora Cloud</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate temporibus esse incidunt repellendus dolorum fugit veritatis, neque corrupti. Modi corporis officia molestiae. Expedita suscipit, dolore architecto quisquam eveniet dolor.</p>
+        <div class="art-dir-container">
+          <picture>
+            <source type="image/jpg" media="(max-width:799px)" srcset="img/aurora-480w.jpg">
+            <source type="image/jpg" media="(min-width:800px)" srcset="img/aurora-1920w.jpg"> 
+            <img src="img/aurora-1920w.jpg" alt="Aurora">
+          </picture>
+        </div>
+      </section>
+
+      <section class="cirrus">
+        <h2>Cirrus Cloud</h2>
+        <p>Lower Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate temporibus esse incidunt repellendus dolorum fugit veritatis, neque corrupti. Modi corporis officia molestiae. Expedita suscipit, dolore architecto quisquam eveniet dolor.</p>
+        <div class="res-change-container">
+          <img src="img/jkc.JPG" alt="John Keys Cloud"
+              srcset="img/jkc-480w.jpg 480w,
+                      img/jkc-800w.jpg 800w,
+                      img/jkc-1920w.JPG 1920w"
+              sizes="(max-width:600px) 80vw,
+                      (max-width:1024px) 70vw,
+                      55vw">
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
